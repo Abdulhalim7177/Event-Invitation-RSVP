@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+	  <connectionStrings>
+		  <add name="connection" connectionString="Data Source=Data Source=sql.bsite.net\\MSSQL2016; initial catalog=eventattenders_;" providerName="System.Data.SqlClient"/>
+	  </connectionStrings>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
+  </ItemGroup>
+
+</Project>
