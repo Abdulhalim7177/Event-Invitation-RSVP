@@ -1,0 +1,59 @@
+﻿@page
+@model GetTogether.Pages.RsvpModel
+@{
+}
+
+<section class="min-vh-100 mb-8">
+    <div class="page-header align-items-start min-vh-50 pt-5 pb-11 m-3 border-radius-lg" style="background-image: url('../assets/img/curved-images/curved11.jpg');">
+        <span class="mask bg-gradient-dark opacity-6"></span>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 text-center mx-auto">
+                    <h1 class="text-white mb-2 mt-5">Welcome!</h1>
+                    <p class="text-lead text-white">Please fill in your Name and Phone Number.</p>
+                    <p class="text-lead text-white"> You are to fill in Only once</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-lg-n10 mt-md-n11 mt-n10">
+            <div class="col-xl-4 col-lg-5 col-md-7 mx-auto">
+                <div class="card z-index-0">
+                    <div class="card-body">
+                        <form method="post">
+                            <div>
+                                <label>Full Name</label>
+                                <input type="text" name="FullName" value="" class="form-control" placeholder="Name" required />
+                            </div>
+                            <div>
+                                <label>Phone Number</label>
+                                <input type="text" name="PhoneNumber" value="" class="form-control" placeholder="Phone Number" required />
+                            </div><br />
+                            <div class="form-check form-check-info text-left">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                                <label class="form-check-label " for="flexCheckDefault">
+                                    <p class="text-dark font-weight-bolder">
+                                        Are you really comming
+                                    </p>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="submit" value="RSVP" class="btn btn-primary" />
+                                <a class="btn bg-gradient-dark" asp-page="/AttendersList">View Attendees</a>
+                            </div>
+                            <div class="text-center">
+                                
+
+                            </div>
+                        </form>
+                        <div class="text-danger">
+                            @Model.errorMessage
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
