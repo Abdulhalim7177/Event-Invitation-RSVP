@@ -1,5 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
 using System.Data;
+
+
 namespace GetTogether.Models
 {
     public class RSVP

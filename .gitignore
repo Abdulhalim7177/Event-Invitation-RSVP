@@ -1,5 +1,16 @@
-# CSS files
-**/*.css
+# C# .NET ignores
+[Bb]in/
+[Oo]bj/
+*.user
+*.userosscache
+*.sln.doccache
+*.suo
 
-# SCSS files
-**/*.scss
+# User-specific files
+.vs/
+.idea/
+.vscode/
+
+# Build results
+[Aa]ppsettings.Development.json
+aa
